@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SimurghVPN - Pay online</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0"><i class="fab fa-phoenix-squadron me-3"></i>SimurghVPN</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <a href="payment.html" class="nav-item nav-link active">Payment</a>
+                        <a href="tutorial.html" class="nav-item nav-link">Tutorial</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Download</a>
+                            <div class="dropdown-menu m-0">
+                            <a href="https://github.com/hiddify/hiddify-next/releases/download/v2.0.5/Hiddify-Android-universal.apk" class="dropdown-item">Android  <i class="fab fa-android"style="font-size:24px;color:green"></i></a>
+                            <a href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532" class="dropdown-item">iOS   <i class="fab fa-apple"style="font-size:24px;color:red"></i></a>
+                            <a href="https://github.com/hiddify/hiddify-next/releases/download/v2.0.5/Hiddify-Debian-x64.deb" class="dropdown-item">Linux   <i class="fab fa-linux"style="font-size:24px;color:black"></i></a>
+                            <a href="https://github.com/hiddify/hiddify-next/releases/download/v2.0.5/Hiddify-MacOS.dmg" class="dropdown-item">Mac   <i class="fab fa-safari"style="font-size:24px;color:brown"></i></a>
+                            <a href="https://github.com/hiddify/hiddify-next/releases/download/v2.0.5/Hiddify-Windows-Setup-x64.exe" class="dropdown-item">Windows 10-11   <i class="fab fa-windows"style="font-size:24px;color:blue"></i></a>
+                            </div>
+                        </div>
+<div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-globe"> EN</i></a>
+                            <div class="dropdown-menu m-0">
+                                                      
+<!-- Google Translate Widget -->
+<div id="google_translate_element"></div>
+<!-- Google Translate Script -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'ar,zh-CN,fr,hi,id,ms,pt-PT,ru,tr,vi,', // Customize this list
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                            </div>
+                        </div>
+                    </div>
+                    <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                    <a href="https://t.me/simorgh_azadi" class="btn btn-secondary py-2 px-4 ms-3">Support</a>
+                </div>
+            </nav>
+
+
+            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5 pt-5">
+                        <div class="col-12 text-center text-lg-start">
+                            <h1 class="display-4 text-white animated slideInLeft">How to buy a Simurgh VPN</h1>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center justify-content-lg-start animated slideInLeft">
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Credit Card</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Crypto payment</a></li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 40, 51, 0.8);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+
+        <!-- Domain Search Start -->
+        <div class="container-xxl domain mb-5" style="margin-top: 90px;">
+            <div class="container px-lg-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="section-title position-relative text-center mx-auto mb-4 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                            <h1 class="mb-3">Simurgh VPN subscription plans (Euro €)</h1>
+                            
+                       
+                        </div>
+                        <div class="row g-3 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">Bronze</h5>
+                                <p class="mb-0">€3.5/month</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">Silver</h5>
+                                <p class="mb-0">€6.5/bimonthly</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">Gold</h5>
+                                <p class="mb-0">€9/quarter</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">Platinum</h5>
+                                <p class="mb-0">€15.5/semianual</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">Titanium</h5>
+                                <p class="mb-0">€28.5/annual</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">Diamond</h5>
+                                <p class="mb-0">€51.5/biennial</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Domain Search End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-title position-relative mb-4 pb-4">
+                            <h1 class="mb-2">1. Pay with credit/debit card</h1>
+                        </div>
+
+                        <p class="mb-4">Please pay your chosen vpn subscription plan price to below VISA card number / IBAN money transfer by (Euro €) . Then send your transaction receipt screenshot to our Telegram support or website chat support. Your vpn account would deliver immadiately there.</p>
+
+                     <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Card Number: 4766-1909-0391-1837    Holder: Mohammad Bidabadi"></p>
+
+<input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="                            IBAN: TR120001009010908535705002 "></p>
+
+
+                        <div class="row g-3">
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-shopping-bag fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">15820</h2>
+                                    <p class="mb-0">Sales</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-credit-card fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">140534</h2>
+                                    <p class="mb-0">By Cards (€)</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-university fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">71780</h2>
+                                    <p class="mb-0">Bank transfer (€)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/credit cards.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+
+<!-- Domain Search Start 2 -->
+        <div class="container-xxl domain mb-5" style="margin-top: 90px;">
+            <div class="container px-lg-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="section-title position-relative text-center mx-auto mb-4 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                            <h1 class="mb-3">Simurgh VPN subscription plans (USD $)</h1>
+                            
+                       
+                        </div>
+                       <div class="row g-3 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">Bronze</h5>
+                                <p class="mb-0">$4/month</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">Silver</h5>
+                                <p class="mb-0">$7.5/bimonthly</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">Gold</h5>
+                                <p class="mb-0">$10.5/quarter</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">Platinum</h5>
+                                <p class="mb-0">$18/semiannual</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">Titanium</h5>
+                                <p class="mb-0">$33/annual</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">Diamond</h5>
+                                <p class="mb-0">$60/biennial</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Domain Search End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-title position-relative mb-4 pb-4">
+                            <h1 class="mb-2">2. Pay with cryptocurrency </h1>
+                        </div>
+
+                        <p class="mb-4">Please pay your chosen vpn subscription plan price to below crypto address by (US Dollar $). The transaction fee varies on the crypto & exchange app which you are chosen. Then send your transaction receipt screenshot to our Telegram support or website chat support. Your vpn account would deliver immadiately there.</p>
+
+                     <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="USDT & Tron Trx Address: TVjjm1LAG5vbPC26K7h4NoA1mESJ3XWstA"></p>
+
+<input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="ETH Address: 0xd3de6ebb7c35482ff9d3e84712273817b52c220a "></p>
+
+<input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="XRP (Ripple) Address: rwJXYKC1VMzGYc6RHnhnbe38syj5EE34cS "></p>
+
+<input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="DOGE Address: D8EGgeQroVjAGeS5iFdQNpkA5WUWd8iSrY "></p>
+
+<p class="mb-4">If the cryptocurrency you are looking for is not listed above, please message our support to receive the desired wallet address.</p>
+
+                        <div class="row g-3">
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-shopping-bag fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">17063</h2>
+                                    <p class="mb-0">Sales</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-credit-card fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">210741</h2>
+                                    <p class="mb-0">Wallets ($)</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-university fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">85700</h2>
+                                    <p class="mb-0">Exchanges ($)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/crypto payments1.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        
+
+                <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-white footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row gy-5 gx-4 pt-5">
+                    <div class="col-12">
+                        <h5 class="fw-bold text-white mb-4">Subscribe Our Newsletter</h5>
+                        <div class="position-relative" style="max-width: 400px;">
+                            <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                            <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                        <div class="row gy-5 g-4">
+                            <div class="col-md-6">
+                                <h5 class="fw-bold text-white mb-4">SimurghVPN</h5>
+                                <a class="btn btn-link" href="index.html">Main Page</a>
+                                <a class="btn btn-link" href="payment.html">Buy Online</a>
+                                <a class="btn btn-link" href="tutorial.html">Connect</a>
+                                <a class="btn btn-link" href="https://t.me/cmorgh_azadi">Terms & Condition</a>
+                                <a class="btn btn-link" href="https://t.me/simorgh_azadi">Support Telegram</a>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="fw-bold text-white mb-4">Install App</h5>
+                                <a class="btn btn-link" href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532">App store</a>
+                                <a class="btn btn-link" href="https://play.google.com/store/apps/details?id=app.hiddify.com">Google play</a>
+                                <a class="btn btn-link" href="https://apps.microsoft.com/detail/9pdfnl3qv2s5?hl=en-US&gl=US">Microsoft store</a>
+                                <a class="btn btn-link" href="https://github.com/hiddify/hiddify-app/releases/download/v2.0.5/Hiddify-rpm-x64.rpm">Linux</a>
+                                <a class="btn btn-link" href="https://github.com/hiddify/hiddify-next/releases/download/v2.0.5/Hiddify-MacOS.dmg">Mac</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="fw-bold text-white mb-4">Get In Touch</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>489 New Cross Rd, London, UK</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+98 935 2453032</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@simorghazadi.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://x.com/certmine1988"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://instagram.com/simourgh.azadi/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://t.me/simorgh_azadi"><i class="fab fa-telegram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://simorghazadi.com/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-lg-n5">
+                        <div class="bg-light rounded" style="padding: 30px;">
+                            <input type="text" class="form-control border-0 py-2 mb-2" placeholder="Name">
+                            <input type="email" class="form-control border-0 py-2 mb-2" placeholder="Email">
+                            <textarea class="form-control border-0 mb-2" rows="2" placeholder="Message"></textarea>
+                            <button class="btn btn-primary w-100 py-2">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">SimorghVPN</a>, All Right Reserved. 
+							
+					
+							Designed By <a class="border-bottom" href="https://ir.linkedin.com/in/mohamad-bidabadi-8781b676">Mohammad Bidabadi</a>
+                            </br>
+                                                    </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a>windows vpn</a>
+                                <a>China vpn</a>
+                                <a>Russia vpn</a>
+                                <a>Fixed_ip vpn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9bff04ef-d016-4511-9ca5-beab3bfff108";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

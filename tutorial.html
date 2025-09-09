@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SimurghVPN - filter breaker </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0"><i class="fab fa-phoenix-squadron me-3"></i>SimurghVPN</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="payment.html" class="nav-item nav-link">Payment</a>
+                        <a href="tutorial.html" class="nav-item nav-link active">Tutorial</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Download</a>
+                            <div class="dropdown-menu m-0">
+                            <a href="https://github.com/hiddify/hiddify-next/releases/download/v2.0.5/Hiddify-Android-universal.apk" class="dropdown-item">Android  <i class="fab fa-android"style="font-size:24px;color:green"></i></a>
+                            <a href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532" class="dropdown-item">iOS   <i class="fab fa-apple"style="font-size:24px;color:red"></i></a>
+                            <a href="https://github.com/hiddify/hiddify-next/releases/download/v2.0.5/Hiddify-Debian-x64.deb" class="dropdown-item">Linux   <i class="fab fa-linux"style="font-size:24px;color:black"></i></a>
+                            <a href="https://github.com/hiddify/hiddify-next/releases/download/v2.0.5/Hiddify-MacOS.dmg" class="dropdown-item">Mac   <i class="fab fa-safari"style="font-size:24px;color:brown"></i></a>
+                            <a href="https://github.com/hiddify/hiddify-next/releases/download/v2.0.5/Hiddify-Windows-Setup-x64.exe" class="dropdown-item">Windows 10-11   <i class="fab fa-windows"style="font-size:24px;color:blue"></i></a>
+                            </div>
+                        </div>
+                                <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-globe"> EN</i></a>
+                            <div class="dropdown-menu m-0">
+                                                      
+<!-- Google Translate Widget -->
+<div id="google_translate_element"></div>
+<!-- Google Translate Script -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'ar,zh-CN,fr,hi,id,ms,pt-PT,ru,tr,vi,', // Customize this list
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                            </div>
+                        </div>
+                    </div>
+                    <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                    <a href="https://t.me/simorgh_azadi" class="btn btn-secondary py-2 px-4 ms-3">Support</a>
+                </div>
+            </nav>
+
+
+            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5 pt-5">
+                        <div class="col-12 text-center text-lg-start">
+                            <h1 class="display-4 text-white animated slideInLeft">How to setup SimurghVPN</h1>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center justify-content-lg-start animated slideInLeft">
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Android</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">iOS & MAC</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Windows</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Linux</a></li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 40, 51, 0.8);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+
+
+               <!-- Testimonial Start -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container px-lg-5">
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 my-4">
+                        <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 ms-5 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                        <p class="mt-3">1. Install SimurghVpn app on your device (Hiddify)</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/Step-1.png" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">INSTALL APP</h6>
+                                <small>STEP 1</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 my-4">
+                        <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 ms-5 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                        <p class="mt-3">2. Pay selected vpn plan , recive your vpn connection link from our support</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/Step-2.png" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">PAYMENT</h6>
+                                <small>STEP 2</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 my-4">
+                        <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 ms-5 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                        <p class="mt-3">Add your vpn link/QR code to Hiddify app</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/Step-3.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">CONNECT</h6>
+                                <small>STEP 3</small>
+                            </div>
+                        </div>
+                    </div>
+                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Team Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3"> 1. Install SimurghVPN app</h1>
+                    <p class="mb-1">Download the official Simurgh VPN Connect client VPN software for your operating system.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
+                            <div class="text-center p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="img/team-5.jpg" alt="">
+                                <h5 class="fw-bold mb-1">Android</h5>
+                                <small>Hiddify</small>
+                            </div>
+                            <div class="d-flex justify-content-center bg-primary p-3">
+                                <a class="btn btn-square text-primary bg-white m-1" href="https://github.com/hiddify/hiddify-next/releases/download/v2.0.5/Hiddify-Android-universal.apk"><i class="fa fa-download"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href="https://play.google.com/store/apps/details?id=app.hiddify.com"><i class="fab fa-android"></i></a>
+                      
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
+                            <div class="text-center p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="img/team-6.jpg" alt="">
+                                <h5 class="fw-bold mb-1">Apple iOS & MAC</h5>
+                                <small>Hiddify</small>
+                            </div>
+                            <div class="d-flex justify-content-center bg-primary p-3">
+                                <a class="btn btn-square text-primary bg-white m-1" href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532"><i class="fab fa-apple"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href="https://github.com/hiddify/hiddify-next/releases/download/v2.0.5/Hiddify-MacOS.dmg"><i class="fab fa-safari"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
+                            <div class="text-center p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="img/team-7.jpg" alt="">
+                                <h5 class="fw-bold mb-1">Windows 64 bit</h5>
+                                <small>Hiddify</small>
+                            </div>
+                            <div class="d-flex justify-content-center bg-primary p-3">
+                                <a class="btn btn-square text-primary bg-white m-1" href="https://github.com/hiddify/hiddify-next/releases/download/v2.0.5/Hiddify-Windows-Setup-x64.exe"><i class="fa fa-download"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href="https://apps.microsoft.com/detail/9pdfnl3qv2s5?hl=en-US&gl=US"><i class="fa fa-desktop"></i></a>
+                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
+                            <div class="text-center p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="img/team-8.jpg" alt="">
+                                <h5 class="fw-bold mb-1">Linux</h5>
+                                <small>Hiddify</small>
+                            </div>
+                            <div class="d-flex justify-content-center bg-primary p-3">
+                                <a class="btn btn-square text-primary bg-white m-1" href="https://github.com/hiddify/hiddify-next/releases/download/v2.0.5/Hiddify-Debian-x64.deb"><i class="fa fa-download"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href="https://github.com/hiddify/hiddify-app/releases/download/v2.0.5/Hiddify-rpm-x64.rpm"><i class="fab fa-linux"></i></a>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+        
+        <!-- Pricing Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">2. SimurghVPN Pricing </h1>
+                    <p class="mb-1">Buy your private vpn account with Credit Card, PayPal, or Crypto
+. Available for Windows, iOS, Android, Mac, linux, openwrt Router, Smart TV.</p>
+                </div>
+                <div class="row gy-5 gx-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="position-relative shadow rounded border-top border-5 border-primary">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                                <i class="fab fa-phoenix-framework text-white"></i>
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <h4 class="fw-bold">Bronze Subscription</h4>
+                                <p class="mb-0">Get access to all platforms with fixed IP for a flat monthly fee</p>
+                            </div>
+                            <div class="text-center border-bottom p-4">
+                                <p class="text-primary mb-1">cost-effective payment - <strong>Economic</strong></p>
+                                <h1 class="mb-3">
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>4<small
+                                        class="align-bottom" style="font-size: 16px; line-height: 40px;">/1-Month</small>
+                                </h1>
+                                <a class="btn btn-primary px-4 py-2" href="https://t.me/simorgh_azadi">Buy Now</a>
+                            </div>
+                            <div class="p-4">
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>500 GB Network Traffic</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>5G Bandwith (10Gbps)       <i class="fas fa-rocket"style="font-size:14px;color:orange"></i></p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Static IP - Cloudflare protection</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Available Locations 🇩🇪 🇧🇬 🇦🇲 🇳🇱 🇵🇱</p>
+                                                    <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>All Platforms
+                        <i class="fab fa-apple"style="font-size:24px;color:red"></i> <i class="fab fa-android"style="font-size:24px;color:green"></i> <i class="fab fa-linux"style="font-size:24px;color:black"></i> <i class="fab fa-windows"style="font-size:24px;color:blue"></i> <i class="fas fa-tv"style="font-size:20px;color:purple"></i> <i class="fas fa-wifi"style="font-size:20px;color:pink"></i></p>
+                                <p class="mb-0"><i class="fa fa-check text-primary me-3"></i>3 Days Money Back Guarantee</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="position-relative shadow rounded border-top border-5 border-secondary">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-secondary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                                <i class="fab fa-phoenix-squadron text-white"></i>
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <h4 class="fw-bold">Silver Subscription</h4>
+                                <p class="mb-0">Get access to all platforms with fixed IP for a flat bimonthly fee</p>
+                            </div>
+                            <div class="text-center border-bottom p-4">
+                                <p class="text-primary mb-1">$3.75 monthly - <strong>Save 8%</strong></p>
+                                <h1 class="mb-3">
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>7.5<small
+                                        class="align-bottom" style="font-size: 16px; line-height: 40px;">/2-Month</small>
+                                </h1>
+                                <a class="btn btn-secondary px-4 py-2" href="https://t.me/simorgh_azadi">Buy Now</a>
+                            </div>
+                            <div class="p-4">
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>1000 GB Network Traffic</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>5G Bandwith (10Gbps)       <i class="fas fa-rocket"style="font-size:14px;color:orange"></i></p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Static IP - Cloudflare protection</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Available Locations 🇩🇪 🇧🇬 🇦🇲 🇳🇱 🇵🇱</p>
+                                                    <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>All Platforms
+                        <i class="fab fa-apple"style="font-size:24px;color:red"></i> <i class="fab fa-android"style="font-size:24px;color:green"></i> <i class="fab fa-linux"style="font-size:24px;color:black"></i> <i class="fab fa-windows"style="font-size:24px;color:blue"></i> <i class="fas fa-tv"style="font-size:20px;color:purple"></i> <i class="fas fa-wifi"style="font-size:20px;color:pink"></i></p>
+                                <p class="mb-0"><i class="fa fa-check text-primary me-3"></i>5 Days Money Back Guarantee</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="position-relative shadow rounded border-top border-5 border-primary">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                                <i class="fab fa-modx text-white"></i>
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <h4 class="fw-bold">Gold Subscription</h4>
+                                <p class="mb-0">Get access to all platforms with fixed IP for a flat quarterly basis</p>
+                            </div>
+                            <div class="text-center border-bottom p-4">
+                                <p class="text-primary mb-1">$3.5 monthly - <strong>Save 13%</strong></p>
+                                <h1 class="mb-3">
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>10.5<small
+                                        class="align-bottom" style="font-size: 16px; line-height: 40px;">/3-Month</small>
+                                </h1>
+                                <a class="btn btn-primary px-4 py-2" href="https://t.me/simorgh_azadi">Buy Now</a>
+                            </div>
+                            <div class="p-4">
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>1500 GB Network Traffic</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>5G Bandwith (10Gbps)       <i class="fas fa-rocket"style="font-size:14px;color:orange"></i></p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Static IP - Cloudflare protection</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Available Locations 🇩🇪 🇧🇬 🇦🇲 🇳🇱 🇵🇱</p>
+                                                    <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>All Platforms
+                        <i class="fab fa-apple"style="font-size:24px;color:red"></i> <i class="fab fa-android"style="font-size:24px;color:green"></i> <i class="fab fa-linux"style="font-size:24px;color:black"></i> <i class="fab fa-windows"style="font-size:24px;color:blue"></i> <i class="fas fa-tv"style="font-size:20px;color:purple"></i> <i class="fas fa-wifi"style="font-size:20px;color:pink"></i></p>
+                                <p class="mb-0"><i class="fa fa-check text-primary me-3"></i>7 Days Money Back Guarantee</p>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class=" mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                 </div>
+                <div class="row gy-5 gx-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="position-relative shadow rounded border-top border-5 border-primary">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                                <i class="fab fa-phoenix-framework text-white"></i>
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <h4 class="fw-bold">Platinum Subscription</h4>
+                                <p class="mb-0">Get access to all platforms with fixed IP for a flat semiannual basis</p>
+                            </div>
+                            <div class="text-center border-bottom p-4">
+                                <p class="text-primary mb-1">$3 monthly - <strong>Save 25%</strong></p>
+                                <h1 class="mb-3">
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>18<small
+                                        class="align-bottom" style="font-size: 16px; line-height: 40px;">/6-Month</small>
+                                </h1>
+                                <a class="btn btn-primary px-4 py-2" href="https://t.me/simorgh_azadi">Buy Now</a>
+                            </div>
+                            <div class="p-4">
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>3000 GB Network Traffic</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>5G Bandwith (20Gbps)      <i class="fas fa-rocket"style="font-size:14px;color:orange"></i><i class="fas fa-rocket"style="font-size:14px;color:orange"></i></p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Static IP - Cloudflare protection</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Available Locations 🇩🇪 🇧🇬 🇦🇲 🇳🇱 🇵🇱</p>
+                                                    <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>All Platforms
+                        <i class="fab fa-apple"style="font-size:24px;color:red"></i> <i class="fab fa-android"style="font-size:24px;color:green"></i> <i class="fab fa-linux"style="font-size:24px;color:black"></i> <i class="fab fa-windows"style="font-size:24px;color:blue"></i> <i class="fas fa-tv"style="font-size:20px;color:purple"></i> <i class="fas fa-wifi"style="font-size:20px;color:pink"></i></p>
+                                <p class="mb-0"><i class="fa fa-check text-primary me-3"></i>10 Days Money Back Guarantee</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="position-relative shadow rounded border-top border-5 border-secondary">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-secondary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                                <i class="fab fa-phoenix-squadron text-white"></i>
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <h4 class="fw-bold">Titanium Subscription</h4>
+                                <p class="mb-0">Get access to all platforms with fixed IP for a flat annual basis</p>
+                            </div>
+                            <div class="text-center border-bottom p-4">
+                                <p class="text-primary mb-1">$2.75 monthly - <strong>Save 32%</strong></p>
+                                <h1 class="mb-3">
+                                 <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>33<small
+                                        class="align-bottom" style="font-size: 16px; line-height: 40px;">/12-Month</small>
+                                </h1>
+                                <a class="btn btn-secondary px-4 py-2" href="https://t.me/simorgh_azadi">Buy Now</a>
+                            </div>
+                            <div class="p-4">
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>5000 GB Network Traffic</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>5G Bandwith (20Gbps)       <i class="fas fa-rocket"style="font-size:14px;color:orange"></i><i class="fas fa-rocket"style="font-size:14px;color:orange"></i></p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Static IP - Cloudflare protection</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Available Locations 🇩🇪 🇧🇬 🇦🇲 🇳🇱 🇵🇱</p>
+                                                    <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>All Platforms
+                        <i class="fab fa-apple"style="font-size:24px;color:red"></i> <i class="fab fa-android"style="font-size:24px;color:green"></i> <i class="fab fa-linux"style="font-size:24px;color:black"></i> <i class="fab fa-windows"style="font-size:24px;color:blue"></i> <i class="fas fa-tv"style="font-size:20px;color:purple"></i> <i class="fas fa-wifi"style="font-size:20px;color:pink"></i></p>
+                                <p class="mb-0"><i class="fa fa-check text-primary me-3"></i>12 Days Money Back Guarantee</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="position-relative shadow rounded border-top border-5 border-primary">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                                <i class="fab fa-modx text-white"></i>
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <h4 class="fw-bold">Diamond Subscription</h4>
+                                <p class="mb-0">Get access to all platforms with fixed IP for a flat biennial basis</p>
+                            </div>
+                            <div class="text-center border-bottom p-4">
+                                <p class="text-primary mb-1">$2.5 monthly - <strong>Save 38%</strong></p>
+                                <h1 class="mb-3">
+                                 <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>60<small
+                                        class="align-bottom" style="font-size: 16px; line-height: 40px;">/24-Month</small>
+                                </h1>
+                                <a class="btn btn-primary px-4 py-2" href="https://t.me/simorgh_azadi">Buy Now</a>
+                            </div>
+                            <div class="p-4">
+                             <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>10000 GB Network Traffic</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>5G Bandwith (20Gbps)       <i class="fas fa-rocket"style="font-size:14px;color:orange"></i><i class="fas fa-rocket"style="font-size:14px;color:orange"></i></p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Static IP - Cloudflare protection</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Available Locations 🇩🇪 🇧🇬 🇦🇲 🇳🇱 🇵🇱</p>
+                                                    <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>All Platforms
+                        <i class="fab fa-apple"style="font-size:24px;color:red"></i> <i class="fab fa-android"style="font-size:24px;color:green"></i> <i class="fab fa-linux"style="font-size:24px;color:black"></i> <i class="fab fa-windows"style="font-size:24px;color:blue"></i> <i class="fas fa-tv"style="font-size:20px;color:purple"></i> <i class="fas fa-wifi"style="font-size:20px;color:pink"></i></p>
+                                <p class="mb-0"><i class="fa fa-check text-primary me-3"></i>15 Days Money Back Guarantee</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pricing End -->
+
+
+ <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-title position-relative mb-4 pb-4">
+                            <h1 class="mb-2">3. Add SimurghVPN subscription link to Hiddify</h1>
+                        </div>
+                        <p class="mb-4">After complete your purchesing, copy your SimurghVPN subscription link, click on + on right top Hiddify app, either click add from clipboard wait until your profil is loadinig to the app, then click blue circle. Or scan your SimurghVPN subscription QRcode by device camera wait until your profil is loadinig on app then click blue circle </p>
+<p class="mb-4">Whenever switch the internet or being disconnected, click on 🔄 left on your account box in order to update profile & receive new proxies from server according to your internet network</p>
+                        <div class="row g-3">
+                             <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/banner_6.gif">
+
+                     </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/Connect_1.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+                <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-white footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row gy-5 gx-4 pt-5">
+                    <div class="col-12">
+                        <h5 class="fw-bold text-white mb-4">Subscribe Our Newsletter</h5>
+                        <div class="position-relative" style="max-width: 400px;">
+                            <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                            <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                        <div class="row gy-5 g-4">
+                            <div class="col-md-6">
+                                <h5 class="fw-bold text-white mb-4">SimurghVPN</h5>
+                                <a class="btn btn-link" href="index.html">Main Page</a>
+                                <a class="btn btn-link" href="payment.html">Buy Online</a>
+                                <a class="btn btn-link" href="tutorial.html">Connect</a>
+                                <a class="btn btn-link" href="https://t.me/cmorgh_azadi">Terms & Condition</a>
+                                <a class="btn btn-link" href="https://t.me/simorgh_azadi">Support Telegram</a>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="fw-bold text-white mb-4">Install App</h5>
+                                <a class="btn btn-link" href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532">App store</a>
+                                <a class="btn btn-link" href="https://play.google.com/store/apps/details?id=app.hiddify.com">Google play</a>
+                                <a class="btn btn-link" href="https://apps.microsoft.com/detail/9pdfnl3qv2s5?hl=en-US&gl=US">Microsoft store</a>
+                                <a class="btn btn-link" href="https://github.com/hiddify/hiddify-app/releases/download/v2.0.5/Hiddify-rpm-x64.rpm">Linux</a>
+                                <a class="btn btn-link" href="https://github.com/hiddify/hiddify-next/releases/download/v2.0.5/Hiddify-MacOS.dmg">Mac</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="fw-bold text-white mb-4">Get In Touch</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>489 New Cross Rd, London, UK</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+98 935 2453032</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@simorghazadi.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://x.com/certmine1988"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://instagram.com/simourgh.azadi/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://t.me/simorgh_azadi"><i class="fab fa-telegram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://simorghazadi.com/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-lg-n5">
+                        <div class="bg-light rounded" style="padding: 30px;">
+                            <input type="text" class="form-control border-0 py-2 mb-2" placeholder="Name">
+                            <input type="email" class="form-control border-0 py-2 mb-2" placeholder="Email">
+                            <textarea class="form-control border-0 mb-2" rows="2" placeholder="Message"></textarea>
+                            <button class="btn btn-primary w-100 py-2">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">SimorghVPN</a>, All Right Reserved. 
+							
+					
+							Designed By <a class="border-bottom" href="https://ir.linkedin.com/in/mohamad-bidabadi-8781b676">Mohammad Bidabadi</a>
+                            </br>
+                                                    </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a>buy filter breaker</a>
+                                <a>android proxy</a>
+                                <a>cheap proxy</a>
+                                <a>best proxy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9bff04ef-d016-4511-9ca5-beab3bfff108";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
