@@ -1,24 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-  <loc>https://simurghvpn.github.io/</loc>
-  <lastmod>2025-09-09T09:47:49+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://simurghvpn.github.io/index.html</loc>
-  <lastmod>2025-09-09T09:47:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://simurghvpn.github.io/payment.html</loc>
-  <lastmod>2025-09-09T09:47:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://simurghvpn.github.io/tutorial.html</loc>
-  <lastmod>2025-09-09T09:47:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-
+    <url>
+        <loc>simurghvpn.github.io</loc>
+        <lastmod>2025-09-13</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>simurghvpn.github.io/index</loc>
+        <lastmod>2025-09-13</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>simurghvpn.github.io/tutorial</loc>
+        <lastmod>2025-09-13</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>simurghvpn.github.io/payment</loc>
+        <lastmod>2025-09-13</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
 </urlset>
